@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F68380429BA42650007B77E /* RickyMortyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F68380329BA42650007B77E /* RickyMortyService.swift */; };
+		3F68380629BA428B0007B77E /* RickyMortyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F68380529BA428B0007B77E /* RickyMortyModel.swift */; };
+		3FEAC35D29BB77C00054DCF1 /* RickyMortyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC35C29BB77C00054DCF1 /* RickyMortyTableViewCell.swift */; };
+		3FEAC36129BB79200054DCF1 /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC36029BB79200054DCF1 /* viewModel.swift */; };
 		3FEF54A929B924AD007640C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF54A829B924AD007640C1 /* AppDelegate.swift */; };
 		3FEF54AB29B924AD007640C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF54AA29B924AD007640C1 /* SceneDelegate.swift */; };
 		3FEF54AD29B924AD007640C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF54AC29B924AD007640C1 /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		302896A58130DF17450B6310 /* Pods-mvvmExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvmExample.debug.xcconfig"; path = "Target Support Files/Pods-mvvmExample/Pods-mvvmExample.debug.xcconfig"; sourceTree = "<group>"; };
+		3F68380329BA42650007B77E /* RickyMortyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyService.swift; sourceTree = "<group>"; };
+		3F68380529BA428B0007B77E /* RickyMortyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyModel.swift; sourceTree = "<group>"; };
+		3FEAC35C29BB77C00054DCF1 /* RickyMortyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyTableViewCell.swift; sourceTree = "<group>"; };
+		3FEAC36029BB79200054DCF1 /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
 		3FEF54A529B924AD007640C1 /* mvvmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FEF54A829B924AD007640C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FEF54AA29B924AD007640C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +35,7 @@
 		3FEF54B129B924AE007640C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FEF54B429B924AE007640C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FEF54B629B924AE007640C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FEF54C429B9267C007640C1 /* RickyMortyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyVC.swift; sourceTree = "<group>"; };
+		3FEF54C429B9267C007640C1 /* RickyMortyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RickyMortyVC.swift; path = mvvmExample/Features/RickyMorty/View/RickyMortyVC.swift; sourceTree = SOURCE_ROOT; };
 		BC60609A8B52C9FFEDF23A50 /* Pods_mvvmExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvmExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6A41DB16251EC575663FB9 /* Pods-mvvmExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvmExample.release.xcconfig"; path = "Target Support Files/Pods-mvvmExample/Pods-mvvmExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +58,14 @@
 				BC60609A8B52C9FFEDF23A50 /* Pods_mvvmExample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FEAC35B29BB777A0054DCF1 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3FEAC35C29BB77C00054DCF1 /* RickyMortyTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		3FEF549C29B924AD007640C1 = {
@@ -115,6 +131,7 @@
 		3FEF54C029B925FC007640C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F68380529BA428B0007B77E /* RickyMortyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +139,7 @@
 		3FEF54C129B92606007640C1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3FEAC36029BB79200054DCF1 /* viewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -129,6 +147,7 @@
 		3FEF54C229B92624007640C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3FEAC35B29BB777A0054DCF1 /* TableViewCell */,
 				3FEF54C429B9267C007640C1 /* RickyMortyVC.swift */,
 			);
 			path = View;
@@ -137,6 +156,7 @@
 		3FEF54C329B9262E007640C1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3F68380329BA42650007B77E /* RickyMortyService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -147,7 +167,6 @@
 				302896A58130DF17450B6310 /* Pods-mvvmExample.debug.xcconfig */,
 				DA6A41DB16251EC575663FB9 /* Pods-mvvmExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -266,10 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F68380629BA428B0007B77E /* RickyMortyModel.swift in Sources */,
 				3FEF54AD29B924AD007640C1 /* ViewController.swift in Sources */,
 				3FEF54A929B924AD007640C1 /* AppDelegate.swift in Sources */,
 				3FEF54AB29B924AD007640C1 /* SceneDelegate.swift in Sources */,
 				3FEF54C529B9267C007640C1 /* RickyMortyVC.swift in Sources */,
+				3F68380429BA42650007B77E /* RickyMortyService.swift in Sources */,
+				3FEAC36129BB79200054DCF1 /* viewModel.swift in Sources */,
+				3FEAC35D29BB77C00054DCF1 /* RickyMortyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
